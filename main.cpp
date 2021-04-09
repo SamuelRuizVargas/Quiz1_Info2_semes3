@@ -2,10 +2,21 @@
 
 using namespace std;
 
+/*
+ Este Programa recibe un numero entero positivo y retorna la suma
+ de todos sus digitos elevados a si mismos ademas de imprimir el
+ numero mayor y la cantidad de veces que aparece
+*/
+
 int main()
 {
     int n;
     cout<<"Ingrese un numero entero: ";cin>>n;
+    while (n<0)
+    {
+        cout<<"Tiene que ser positivo."<<endl;
+        cout<<"Ingrese un numero entero: ";cin>>n;
+    }
     int n_co=n, suma=0, cifra,potencia, cifra_E=0, conta_E=0, suma_po;;
     while(n_co>0)
     {
